@@ -8,7 +8,8 @@ def func(request):
 
     return JsonResponse({"welcome to Product ShowTime":{"Url to get whole movie list":"base_url/latest_shows",
                                         "Url for booking" :"base_url/booking/<primary key of that movie>",
-                                        "Url to get your all latest bookings" : "base_url/show_booked"}})
+                                        "Url to get your all latest bookings" : "base_url/show_booked"},
+                        "Note": "User authentication necessary for booking and getting booked shows data"})
 
 
 # API: 1
